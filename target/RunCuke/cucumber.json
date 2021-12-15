@@ -1,0 +1,248 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 11950170099,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "verify Job Search Result Using Different Data Set",
+        "description": "",
+        "id": "job-search-test;verify-job-search-result-using-different-data-set;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 801860900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 111919399,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on homepage",
+            "match": {
+              "location": "JonSearchSteps.user_is_on_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 116684200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "enter job title \"Tester\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Tester",
+                  "offset": 17
+                }
+              ],
+              "location": "JonSearchSteps.enterJobTitle(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 81802899,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "enter Location \"Harrow\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Harrow",
+                  "offset": 16
+                }
+              ],
+              "location": "JonSearchSteps.enterLocation(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 142124400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "select distance \"up to 5 miles\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "up to 5 miles",
+                  "offset": 17
+                }
+              ],
+              "location": "JonSearchSteps.selectDistance(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 102986000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "click on more Search Options Link",
+            "match": {
+              "location": "JonSearchSteps.clickOnMoreSearchOptionsLink()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 141407600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "enter salaryMin \"30000\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "30000",
+                  "offset": 17
+                }
+              ],
+              "location": "JonSearchSteps.enterSalaryMin(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 105345899,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "enter salaryMax \"500000\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "500000",
+                  "offset": 17
+                }
+              ],
+              "location": "JonSearchSteps.enterSalaryMax(String)"
+            },
+            "matchedColumns": [
+              4
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 67848700,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "select salaryType \"Per annum\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Per annum",
+                  "offset": 19
+                }
+              ],
+              "location": "JonSearchSteps.selectSalaryType(String)"
+            },
+            "matchedColumns": [
+              5
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 89595400,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "select jobType \"Permanent\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Permanent",
+                  "offset": 16
+                }
+              ],
+              "location": "JonSearchSteps.selectJobType(String)"
+            },
+            "matchedColumns": [
+              6
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 108583700,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "click on Find Jobs button",
+            "match": {
+              "location": "JonSearchSteps.clickOnFindJobsButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4354298300,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "verify the result \"Permanent Tester jobs in Harrow on the Hill\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Permanent Tester jobs in Harrow on the Hill",
+                  "offset": 19
+                }
+              ],
+              "location": "JonSearchSteps.verifyTheResult(String)"
+            },
+            "matchedColumns": [
+              7
+            ],
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Job Search Test",
+    "description": "",
+    "id": "job-search-test",
+    "keyword": "Feature",
+    "uri": "jobSearch.feature"
+  }
+]
